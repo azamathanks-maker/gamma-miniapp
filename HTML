@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>GAMMA — магазин</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Telegram WebApp -->
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="header">
+  <img src="https://via.placeholder.com/120x40?text=GAMMA" alt="GAMMA" class="logo">
+</header>
+
+<section class="categories">
+  <button class="cat active">Все</button>
+  <button class="cat">Канцтовары</button>
+  <button class="cat">Игрушки</button>
+  <button class="cat">Декор</button>
+</section>
+
+<main id="products" class="products">
+  <!-- Товары появятся тут -->
+</main>
+
+<button class="cart-btn" onclick="openCart()">
+  🛒 Корзина (<span id="cart-count">0</span>)
+</button>
+
+<script src="app.js"></script>
+</body>
+</html>
